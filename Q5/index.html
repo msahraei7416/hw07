@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="nav">
+        <h3>LOGO</h3>
+        <div class="menu">
+          <a href="#">Company</a>
+          <a href="http://">Services</a>
+          <a href="http://">FinTech Solutions</a>
+          <a href="http://">Products</a>
+          <a href="http://">Portfolio</a>
+          <a href="http://">Contact us</a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="left">
+          <h1>Contact us</h1>
+          <p class="paragraf">
+            Need an experienced and skikked hand with custom IT projects?
+          </p>
+          <p class="paragraf">Fill out the from to get a free consultation.</p>
+          <form method="post" class="form-field" id="form">
+            <div id="company-box" class="input-field">
+              <input
+                type="text"
+                name="comoany-name"
+                id="comoany-name"
+                placeholder="Your Comoany Name"
+              />
+              <small></small>
+            </div>
+            <div id="bussiness-box" class="input-field">
+              <input
+                type="text"
+                name="bussiness"
+                id="bussiness"
+                placeholder="Nature of Bussiness"
+              />
+              <small></small>
+            </div>
+            <div class="address-info">
+              <div id="address-box" class="input-field">
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Address"
+                />
+                <small></small>
+              </div>
+              <div id="postcode-box" class="input-field">
+                <input
+                  type="number"
+                  name="postcode"
+                  id="postcode"
+                  placeholder="Postcode"
+                />
+                <small></small>
+              </div>
+            </div>
+            <div id="contact-name-box" class="input-field">
+              <input
+                type="text"
+                name="contact-name"
+                id="contact-name"
+                placeholder="Contact name"
+              />
+              <small></small>
+            </div>
+            <div id="phone-box" class="input-field">
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="comoany-phone"
+              />
+              <small></small>
+            </div>
+            <div id="email-box" class="input-field">
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="email@gmail"
+              />
+              <small></small>
+            </div>
+
+            <div class="linkdin-box input-field">
+              <input
+                type="text"
+                name="linkdin"
+                id="linkdin"
+                placeholder="Linkedin"
+              />
+            </div>
+            <div id="idea-box " class="input-field">
+              <input
+                type="text"
+                name="idea"
+                id="idea"
+                placeholder="Let 's talk about your idea"
+              />
+            </div>
+            <!-- <div
+            id="drag-and-drop"
+            ondrop="drop(event)"
+            ondragover="allowDrop(event)"
+            aria-placeholder="Upload Additional file"
+          ></div> -->
+            <div>
+              <label for="images" class="drop-container" id="dropcontainer">
+                <input type="file" id="images" accept="image/*" />
+              </label>
+            </div>
+            <div><button class="submit" type="submit">SUBMIT</button></div>
+            <div class="protect">
+              <input type="checkbox" name="checkbox" id="checkbox" />
+              <label>I Want to protect my data by signing an NDA</label>
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <div></div>
+          <div><h4>Offices</h4></div>
+          <div class="p-r">
+            <p>United States</p>
+            <p>500 5th Avenue Suite 400,NY 10110</p>
+          </div>
+          <div class="p-r">
+            <p>United Kingdom</p>
+            <p>High St,Bromley BR1 1DN</p>
+          </div>
+          <div class="p-r">
+            <p>France</p>
+            <p>80 avenue des Terroirs de France, Paris</p>
+          </div>
+          <div><h4>For Quick Inquiries</h4></div>
+          <div class="countries">
+            <img src="./img/great-britain.png" alt="great britain" />
+            <p>+44 7777777777</p>
+          </div>
+          <div class="countries">
+            <img src="./img/usa.png" alt="usa" />
+            <p>+1 3333333330</p>
+          </div>
+          <div><h5>Would you like to join our newsletter?</h5></div>
+          <div class="email-box">
+            <input
+              class="input-field"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            /><button type="button" onclick="companyCheckValid()">
+              &check;
+            </button>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

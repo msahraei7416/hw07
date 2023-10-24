@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q7</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="content-video">
+        <video controls class="video">
+          <source src="./video/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="filter">
+        <div class="model-laptop">
+          <label for="model">Laptop model:</label>
+          <select name="model" id="model" class="select">
+            <option value="acer">Acer</option>
+            <option value="asus">Asus</option>
+
+            <option value="macbook">MacBook</option>
+            <option value="lenovo">Lenovo</option>
+          </select>
+        </div>
+        <div class="processor-group">
+          <label for="processor">Processor:</label>
+          <select name="processor" id="processor" class="select">
+            <option value=" " disabled selected></option>
+            <option value="corei3">core i3</option>
+            <option value="corei5">core i5</option>
+            <option value="corei7">core i7</option>
+            <option value="M1">M 1</option>
+          </select>
+        </div>
+        <div class="ram-group">
+          <label for="ram">RAM:</label>
+          <select name="ram" id="ram" class="select">
+            <option value=" " disabled selected></option>
+            <option value="2GB">2GB</option>
+            <option value="4GB">4GB</option>
+            <option value="6GB">6GB</option>
+            <option value="8GB">8GB</option>
+          </select>
+        </div>
+        <div class="hard-group">
+          <label for="hard">Hard disk:</label>
+          <select name="hard" id="hard" class="select">
+            <option value=" " disabled selected></option>
+            <option value="128GB">128GB</option>
+            <option value="256GB">256GB</option>
+            <option value="512BG">512BG</option>
+            <option value="1TB">1TB</option>
+          </select>
+        </div>
+        <button type="button" class="btn-filter" id="btn-filter">Filter</button>
+      </div>
+      <hr class="hr" />
+      <div class="add">
+        <button type="button" class="btn-add" id="btn-add">Add</button>
+      </div>
+      <hr class="hr" />
+      <div class="products">
+        <div class="asus" id="asus">
+          <img src="./img/asus.webp" alt="asus" class="img" />
+          <h4>Asus Vivobook 16 R-1605-ZA</h4>
+          <ul class="list-asus">
+            <li>Core i7</li>
+
+            <li>RAM :6Gb</li>
+            <li>Hard Disc:512GB</li>
+          </ul>
+          <img src="./img/icons-remove.png" alt="remove" class="remove" />
+        </div>
+        <div class="acer" id="acer">
+          <img src="./img/acer.webp" alt="acer" class="img" />
+          <h4>Acer Aspire A315-33-P2B1-2Gb</h4>
+          <ul class="list-acer">
+            <li>Core i3</li>
+
+            <li>RAM :2Gb</li>
+            <li>Hard Disc:128GB</li>
+          </ul>
+          <img src="./img/icons-remove.png" alt="remove" class="remove" />
+        </div>
+        <div class="lenovo" id="lenovo">
+          <img src="./img/lenovo.webp" alt="lenovo" class="img" />
+          <h4>Lenovo IdeaPad 3 15ITL6-i5 8GB</h4>
+          <ul class="list-lenovo">
+            <li>Core i5</li>
+
+            <li>RAM :8Gb</li>
+            <li>Hard Disc:1TB</li>
+          </ul>
+          <img src="./img/icons-remove.png" alt="remove" class="remove" />
+        </div>
+        <div class="macbook" id="macbook">
+          <img src="./img/macbook.webp" alt="macbook" class="img" />
+          <h4>Lenovo IdeaPad 3 15ITL6-i5 8GB</h4>
+          <ul class="list-macbook">
+            <li>M1</li>
+
+            <li>RAM :2Gb</li>
+            <li>Hard Disc:256GB</li>
+          </ul>
+          <img src="./img/icons-remove.png" alt="remove" class="remove" />
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

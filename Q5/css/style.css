@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  padding: 0 0 100px;
+}
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 300px;
+  color: #979797;
+}
+h3 {
+  /* margin: 0 30px 0; */
+  position: absolute;
+  left: 125px;
+  z-index: 1;
+}
+.menu {
+  text-align: center;
+}
+a {
+  color: inherit;
+  background-color: #f9f9f9;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 2;
+}
+
+a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #5db616;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.section {
+  display: flex;
+  justify-content: space-evenly;
+}
+.left {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 70px;
+}
+.right {
+  margin-top: 150px;
+}
+.section input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #000000;
+  font-size: 15px;
+  width: 100%;
+}
+h3 {
+  color: #929292;
+}
+.paragraf {
+  color: #929292;
+}
+#address {
+  width: 70%;
+}
+.form-field {
+  width: 450px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.protect {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.protect input {
+  width: unset;
+}
+#address-box {
+  width: 70%;
+}
+#postcode-box {
+  width: 30%;
+}
+.address-info {
+  display: flex;
+  /* width: 100%; */
+  gap: 15px;
+}
+.address-info #address {
+  width: 100%;
+}
+.address-info #postcode {
+  width: 100%;
+}
+.submit {
+  width: 100%;
+  height: 40px;
+  background-color: #5db616;
+  border: none;
+  color: #fff;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.right p {
+  font-size: 12px;
+  font-weight: 300;
+  /* background-color: red; */
+}
+.countries {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.countries img {
+  width: 30px;
+}
+.email-box {
+  display: flex;
+  gap: 8px;
+  width: 250px;
+}
+.email-box input {
+  width: 80%;
+}
+.email-box button {
+  width: 20%;
+  height: 30px;
+  background-color: #5db616;
+  border: none;
+  color: #fff;
+}
+button {
+  transition: all 200ms;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #508b20;
+}
+button:active {
+  transform: perspective(900px) translateZ(-20px);
+}
+.email-box button:active {
+  transform: perspective(900px) translateZ(-70px);
+}
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+.drop-container:hover {
+  background: #eee;
+  border-color: #111;
+}
+.drop-container:hover .drop-title {
+  color: #222;
+}
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+.invalid {
+  color: #d15050;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.input-field {
+  border-bottom: 3px solid #b9b3b3 !important;
+  position: relative;
+}
+.valid {
+  border-bottom: 3px solid rgb(25, 152, 0) !important;
+}
+/* #company-box {
+  overflow: hidden;
+  height: 38px;
+} */
+small {
+  color: #ff847c;
+  position: absolute;
+  top: 35px;
+  left: 0;
+}

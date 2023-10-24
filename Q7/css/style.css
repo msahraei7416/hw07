@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #f4eded;
+}
+.content {
+  padding: 0 0 50px;
+}
+.video {
+  width: 700px;
+  height: 400px;
+}
+.content-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.select {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: inherit;
+}
+.btn-filter {
+  width: 100px;
+  height: 45px;
+  background-color: transparent;
+  border: 2px dashed #949191;
+  border-radius: 5px;
+}
+.btn-filter:active {
+  transform: perspective(250px) translateZ(-20px);
+}
+.model-laptop,
+.ram-group,
+.processor-group,
+.hard-group {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  border: 2px dashed #949191;
+  border-radius: 5px;
+  padding: 5px;
+}
+.hr {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  border: 3px solid #949191;
+  border-radius: 50px;
+}
+.btn-add {
+  width: 400px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px dashed #949191;
+  border-radius: 5px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+}
+ul {
+  list-style-position: inside;
+  margin: 10px;
+}
+.img {
+  width: 100%;
+  height: 150px;
+}
+.acer,
+.asus,
+.macbook,
+.lenovo {
+  border: 2px solid #949191;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  padding: 0 0 5px;
+}
+h4 {
+  margin: 10px;
+}
+.remove {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
